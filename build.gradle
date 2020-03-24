@@ -26,6 +26,6 @@ test {
     useTestNG()
 }
 allprojects {
-    group 'com.github.sanseyvich.dummy'
-    version = '1.0'
+    group 'com.github.sanseyvich'
+    version = '1.1'
 }
