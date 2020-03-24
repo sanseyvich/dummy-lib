@@ -27,3 +27,4 @@ test {
 }
 
 group 'com.github.sanseyvich'
+version = '1.0'
