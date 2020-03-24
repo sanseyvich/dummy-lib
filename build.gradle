@@ -25,3 +25,5 @@ test {
     // Use TestNG for unit tests
     useTestNG()
 }
+
+group 'com.github.sanseyvich'
