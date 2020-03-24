@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'dummy-lib'
+include 'dummy1'
+
