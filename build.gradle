@@ -25,6 +25,7 @@ test {
     // Use TestNG for unit tests
     useTestNG()
 }
-
-group 'com.github.sanseyvich'
-version = '1.0'
+allprojects {
+    group 'com.github.sanseyvich'
+    version = '1.0'
+}
