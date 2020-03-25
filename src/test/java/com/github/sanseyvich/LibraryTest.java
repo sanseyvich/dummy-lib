@@ -6,11 +6,13 @@ package com.github.sanseyvich;
 import com.github.sanseyvich.lib.FailMessagingLibrary;
 import org.testng.annotations.*;
 
+import java.io.IOException;
+
 import static org.testng.Assert.*;
 
 public class LibraryTest {
     @Test
-    public void onFailRemovesNonEmptyString() {
+    public void onFailRemovesNonEmptyString() throws IOException {
         FailMessagingLibrary classUnderTest = new FailMessagingLibrary();
         assertFalse(classUnderTest.onFail().isEmpty(), "someLibraryMethod should return non empty String");
     }
