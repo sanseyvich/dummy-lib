@@ -12,8 +12,14 @@ import static org.testng.Assert.*;
 
 public class LibraryTest {
     @Test
-    public void onFailRemovesNonEmptyString() throws IOException {
+    public void onFailReturnsNonEmptyString() throws IOException {
         FailMessagingLibrary classUnderTest = new FailMessagingLibrary();
-        assertFalse(classUnderTest.onFail().isEmpty(), "someLibraryMethod should return non empty String");
+        assertFalse(classUnderTest.onFail().isEmpty(), "onFail() should return non empty String");
+    }
+
+    @Test
+    public void onSuccessReturnsNonEmptyString() throws IOException {
+        FailMessagingLibrary classUnderTest = new FailMessagingLibrary();
+        assertFalse(classUnderTest.onSuccess().isEmpty(), "onSuccess() should return non empty String");
     }
 }

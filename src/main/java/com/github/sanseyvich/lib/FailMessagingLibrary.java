@@ -11,4 +11,8 @@ public class FailMessagingLibrary {
     public String onFail() throws IOException {
         return FigletFont.convertOneLine("Oops, the test failed!");
     }
+
+    public String onSuccess() throws IOException {
+        return FigletFont.convertOneLine("Yey, the test passed!");
+    }
 }
