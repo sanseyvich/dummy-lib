@@ -3,8 +3,12 @@
  */
 package com.github.sanseyvich.lib;
 
+import com.github.lalyos.jfiglet.FigletFont;
+
+import java.io.IOException;
+
 public class FailMessagingLibrary {
-    public String onFail() {
-        return "Oops, the test failed!";
+    public String onFail() throws IOException {
+        return FigletFont.convertOneLine("Oops, the test failed!");
     }
 }
